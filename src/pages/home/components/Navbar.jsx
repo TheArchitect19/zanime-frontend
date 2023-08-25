@@ -12,7 +12,7 @@ function Navbar() {
         <div className="nav__menu" id="nav-menu">
             <ul className="flex gap-x-7">
             <li className="nav__item">
-                <a href="" className="text-white transition duration-300 ease-in-out">Home</a>
+                <Link to="/" className="text-white transition duration-300 ease-in-out">Home</Link>
             </li>
 
             <li className="nav__item">
