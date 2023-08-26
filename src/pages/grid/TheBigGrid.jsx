@@ -97,7 +97,9 @@ function TheBigGrid() {
       
 
       await axios.post(`https://zanime-backend.vercel.app/api/save`,{imgurl: data});
-      // window.location.reload();
+      // window.location.reload('https://zanime-frontend.vercel.app/');
+      window.location.href = 'https://zanime-frontend.vercel.app/';
+
     } catch (error) {
       console.log(error);
     }
