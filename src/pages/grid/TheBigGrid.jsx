@@ -97,7 +97,7 @@ function TheBigGrid() {
       
 
       await axios.post(`https://zanime-backend.vercel.app/api/save`,{imgurl: data});
-      window.location.reload();
+      // window.location.reload();
     } catch (error) {
       console.log(error);
     }
