@@ -84,7 +84,7 @@ function TheBigGrid() {
   
 
   useEffect(() => {
-    axios.get('https://zanime-backend-arsm.vercel.app/api/fill')
+    axios.get('https://zanime-backend.vercel.app/api/fill')
     .then(res => setImage(res.data))
     .catch(err => console.log(err))
   }, [])
@@ -96,7 +96,7 @@ function TheBigGrid() {
       const data = inputs.file;
       
 
-      await axios.post(`https://zanime-backend-arsm.vercel.app/api/save`,{imgurl: data});
+      await axios.post(`https://zanime-backend.vercel.app/api/save`,{imgurl: data});
       window.location.reload();
     } catch (error) {
       console.log(error);
