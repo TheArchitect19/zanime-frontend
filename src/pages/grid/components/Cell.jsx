@@ -25,7 +25,7 @@ function Cell({ id, imgsrc }) {
   return (
     <div className={`pin ${size}`}>
       
-      <img className="mainPic" src={`http://localhost:6969/Images/${imgsrc}`}/>
+      <img className="mainPic" src={imgsrc}/>
     </div>
   );
 }
