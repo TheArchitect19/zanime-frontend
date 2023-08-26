@@ -17,13 +17,13 @@ function TheBigGrid() {
     const formdata = new FormData()
     formdata.append('file',file)
     console.log(file);
-    axios.post('https://vercel.com/ayush-eth/zanime-backend/api/save',formdata)
+    axios.post('https://zanime-backend-arsm.vercel.app/api/save',formdata)
     .then(res => console.log(res))
     .catch(err => console.log(err))
   }
 
   useEffect(() => {
-    axios.get('https://vercel.com/ayush-eth/zanime-backend/api/fill')
+    axios.get('https://zanime-backend-arsm.vercel.app/api/fill')
     .then(res => setImage(res.data))
     .catch(err => console.log(err))
   }, [])
